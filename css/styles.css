@@ -1,3 +1,159 @@
+/******************************************************************/
+                          /* IMPORTS */
+/******************************************************************/
+
+
+/* FONTS */
+/* Inter */
+/* regular: 400 
+   bold: 700
+   extra-bold: 800 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+/******************************************************************/
+                          /* VARIABLES */
+/******************************************************************/
+
+
+:root {
+
+
+  /* Colors */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+
+
+  /* Font Family */
+  --main-font-family: 'Inter', sans-serif;
+
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+
+}
+
+
+/******************************************************************/
+                        /* MAIN STYLES */
+/******************************************************************/
+
+
+/* html */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* body */
+body {
+  padding: 1.75rem 1rem 5rem 1rem;
+  font-size: 0.9375rem;
+  font-family: var(--main-font-family);
+  font-weight: var(--fw-regular);
+}
+
+
+/* header .main-header */
+.main-header {
+  height: 1.75rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* .main-logo */
+.main-logo {
+  width: 2.81125rem;
+  height: 1.75rem;
+  background-image: url(../assets/images/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* .hamburger-icon */
+.hamburger-icon {
+  width: 2.5rem;
+  height: 1.0625rem;
+  background-image: url(../assets/images/icon-menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* .top-stories-container */
+.top-stories-container {
+  margin-bottom: 4rem;
+}
+
+
+/* .top-story-img */
+.top-story-image {
+  min-width: 100%;
+  height: 18.75rem;
+  background-image: url(../assets/images/image-web-3-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* h1 .top-story-headline */
+.top-story-headline {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: var(--fw-extra-bold);
+  color: var(--very-dark-blue);
+}
+
+
+/* .top-story-copy */
+.top-story-copy {
+  margin-bottom: 1.5rem;
+  line-height: 1.625rem;
+  color: var(--dark-grayish-blue);
+}
+
+
+/* .read-more-btn */
+.read-more-btn {
+  width: 11.5625rem;
+  height: 3rem;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  border: none;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2734375rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+
+
+
+
+
 .mobile-nav {
+  display: none;
+}
+
+
+.desktop-nav {
   display: none;
 }
